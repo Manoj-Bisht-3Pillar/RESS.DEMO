@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESS.DEMO.Web", "RESS.DEMO.Web\RESS.DEMO.Web.csproj", "{3FB73AE6-71AB-4B95-8A8B-4E87C80F6535}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESS.DEMO.API", "RESS.DEMO.API\RESS.DEMO.API.csproj", "{51A7C8DF-2BA3-4903-B0E6-990B03357FE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FB73AE6-71AB-4B95-8A8B-4E87C80F6535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB73AE6-71AB-4B95-8A8B-4E87C80F6535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB73AE6-71AB-4B95-8A8B-4E87C80F6535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB73AE6-71AB-4B95-8A8B-4E87C80F6535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A7C8DF-2BA3-4903-B0E6-990B03357FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A7C8DF-2BA3-4903-B0E6-990B03357FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A7C8DF-2BA3-4903-B0E6-990B03357FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A7C8DF-2BA3-4903-B0E6-990B03357FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
