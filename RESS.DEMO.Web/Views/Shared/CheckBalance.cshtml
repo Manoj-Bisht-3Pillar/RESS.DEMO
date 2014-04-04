@@ -6,7 +6,7 @@
 
 <div class="col-lg-4" style="margin-top:20px;">
     <div class="panel panel-default">
-        <div class="panel-heading">Check balance</div>
+        <div class="panel-heading">@Model.title</div>
         <div class="panel-body">
             <input id="Button1" type="button" value="button" class="btn btn-success" ng-click="showBalance()" />
         </div>
@@ -15,7 +15,7 @@
             <table class="table table-bordered">
                 <tr>
                     <th>
-                        Accout Holder name
+                        @Model.accountHolderLabel                        
                     </th>
                     <th>
                         Accout Holder balance

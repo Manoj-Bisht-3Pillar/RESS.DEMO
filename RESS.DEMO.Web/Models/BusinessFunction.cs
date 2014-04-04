@@ -9,6 +9,6 @@ namespace RESS.DEMO.Web.Interface
     {
         public string viewIdentifierByClient;
         public string directiveTag;
-        public string controllerTag;
+        public string controller;
     }
 }

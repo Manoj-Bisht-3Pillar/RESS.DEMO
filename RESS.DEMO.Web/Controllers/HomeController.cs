@@ -53,12 +53,43 @@ namespace RESS.DEMO.Web.Controllers
             return View(page);
         }
 
-        public ActionResult CheckBalance()
+        public ActionResult CheckBalance(int? clientid, string lang)
         {
             //get check balance specific features from backend
             CheckBalance checkBalance = new CheckBalance();
+
             checkBalance.directiveTag = "check-balance";
-            return View("CheckBalance", checkBalance);
+            checkBalance.controller = "CheckBalance";
+
+            //The below condition will be fetched from database configurations
+            if (clientid == 1)
+            {
+                checkBalance.directiveTag = "client1check-balance";
+                checkBalance.controller = "Client1Checkbalance";
+                
+            }
+            else
+            {
+                checkBalance.directiveTag = "check-balance";
+                checkBalance.controller = "CheckBalance";
+            }
+
+            checkBalance.accountHolderLabel = "Accout Holder name (en)";
+            checkBalance.title = "Check balance (en)";
+
+            //The below condition will be fetched from db
+            if (lang == "fr")
+            {
+                checkBalance.accountHolderLabel = "Accout Holder name (fr)";
+                checkBalance.title = "Check balance (fr)";
+            }
+            else if (lang =="es")
+            {
+                checkBalance.accountHolderLabel = "Accout Holder name (es)";
+                checkBalance.title = "Check balance (es)";
+            }
+
+            return View(checkBalance.controller, checkBalance);
         }
 
 
