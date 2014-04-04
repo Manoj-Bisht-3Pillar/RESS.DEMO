@@ -64,8 +64,8 @@ namespace RESS.DEMO.Web.Controllers
             //The below condition will be fetched from database configurations
             if (clientid == 1)
             {
-                checkBalance.directiveTag = "client1check-balance";
-                checkBalance.controller = "Client1Checkbalance";
+                checkBalance.directiveTag = "client1-checkbalance";
+                checkBalance.controller = "Client1-Checkbalance";
                 
             }
             else
