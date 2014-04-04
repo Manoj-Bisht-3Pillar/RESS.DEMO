@@ -45,8 +45,11 @@ namespace RESS.DEMO.Web
                        "~/Scripts/directives.js"));
             
             bundles.Add(new ScriptBundle("~/bundles/checkBalance").Include(
-                        "~/Scripts/CheckBalance/checkBalanceController.js"));
-
+                        "~/Scripts/CheckBalance/checkBalanceDirective.js",
+                        "~/Scripts/CheckBalance/checkBalanceController.js",
+                        "~/Scripts/CheckBalance/checkBalanceServices.js"
+                        ));
+            
             bundles.Add(new ScriptBundle("~/bundles/giftSend").Include(
                         "~/Scripts/DepositCheck/depositCheckController.js"));
 
