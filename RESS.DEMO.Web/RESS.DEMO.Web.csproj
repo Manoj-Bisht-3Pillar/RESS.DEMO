@@ -8477,6 +8477,7 @@
     <Content Include="Views\Shared\phone-list.cshtml" />
     <Content Include="Views\Shared\phone-detail.cshtml" />
     <Content Include="Views\Home\HomeBody.cshtml" />
+    <Content Include="Views\Shared\Client1CheckBalance.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\js\" />
