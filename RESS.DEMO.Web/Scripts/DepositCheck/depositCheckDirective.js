@@ -2,7 +2,7 @@
 
 var depositCheckDirective = angular.module('depositCheckDirective', []);
 
-depositCheckDirective.directive('checkBalanceDirective', function () {
+depositCheckDirective.directive('depositCheck', function () {
 
     return {
         restrict: 'AE',
@@ -10,8 +10,8 @@ depositCheckDirective.directive('checkBalanceDirective', function () {
         scope: {
             eventHandler: '&ngClick'
         },
-        templateUrl: 'Home/CheckBalance',
-        controller: 'PhoneListCtrl2',
+        templateUrl: 'Home/DepositCheck',
+        //controller: 'PhoneListCtrl2',
     };
 
 });
