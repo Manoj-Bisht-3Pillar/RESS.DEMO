@@ -35,6 +35,9 @@ namespace RESS.DEMO.Web
             bundles.Add(new ScriptBundle("~/bundles/controllers").Include(
                        "~/Scripts/controllers.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/commonControllers").Include(
+                       "~/Scripts/commonControllers.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/filters").Include(
                        "~/Scripts/filters.js"));
 
