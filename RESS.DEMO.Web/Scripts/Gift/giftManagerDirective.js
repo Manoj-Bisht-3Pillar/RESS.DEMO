@@ -1,8 +1,8 @@
 'use strict'
 
-var checkBalanceDirective = angular.module('checkBalanceDirective', []);
+var giftManagerDirective = angular.module('giftManagerDirective', []);
 
-checkBalanceDirective.directive('checkBalanceDirective', function () {
+giftManagerDirective.directive('giftCard', function () {
 
     return {
         restrict: 'AE',
@@ -10,8 +10,8 @@ checkBalanceDirective.directive('checkBalanceDirective', function () {
         scope: {
             eventHandler: '&ngClick'
         },
-        templateUrl: 'Home/CheckBalance',
-        controller: 'PhoneListCtrl2',
+        templateUrl: 'Home/GiftCard',
+        //controller: 'PhoneListCtrl2',
     };
 
 });

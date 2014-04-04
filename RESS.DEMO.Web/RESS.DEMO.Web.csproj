@@ -143,13 +143,16 @@
     <Compile Include="Interface\IPage.cs" />
     <Compile Include="node_modules\protractor\node_modules\selenium-webdriver\lib\test\data\Page.aspx.cs">
       <DependentUpon>Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="node_modules\protractor\node_modules\selenium-webdriver\lib\test\data\Redirect.aspx.cs">
       <DependentUpon>Redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="app\css\animations.css" />
     <Content Include="app\css\app.css" />
     <Content Include="app\img\glyphicons-halflings-white.png" />
@@ -8196,6 +8199,7 @@
     <Content Include="node_modules\shelljs\package.json" />
     <Content Include="node_modules\shelljs\README.md" />
     <Content Include="phones\accounts.json" />
+    <Content Include=".bowerrc" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\Gift\giftManagerController.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />

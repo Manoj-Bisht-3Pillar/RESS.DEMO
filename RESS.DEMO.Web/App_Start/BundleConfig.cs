@@ -51,10 +51,10 @@ namespace RESS.DEMO.Web
                         ));
             
             bundles.Add(new ScriptBundle("~/bundles/giftSend").Include(
-                        "~/Scripts/DepositCheck/depositCheckController.js"));
+                        "~/Scripts/Gift/giftManagerDirective.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/depositCheck").Include(
-                        "~/Scripts/Gift/giftManagerController.js"));
+                        "~/Scripts/DepositCheck/depositCheckDirective.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
