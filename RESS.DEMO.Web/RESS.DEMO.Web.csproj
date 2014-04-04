@@ -5770,6 +5770,7 @@
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\CheckBalance\checkBalanceDirective.js" />
     <Content Include="Scripts\CheckBalance\checkBalanceServices.js" />
+    <Content Include="Scripts\CheckBalance\client1CheckBalanceDirective.js" />
     <Content Include="Scripts\controllers.js" />
     <Content Include="Scripts\DepositCheck\depositCheckDirective.js" />
     <Content Include="Scripts\DepositCheck\depositCheckService.js" />

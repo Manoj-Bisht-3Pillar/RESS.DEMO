@@ -8,7 +8,8 @@ var phonecatApp = angular.module('phonecatApp', [
   'checkBalanceDirective',
   'phonecatFilters',
   'depositCheckDirective',
-  'giftManagerDirective'
+  'giftManagerDirective',
+  'client1CheckBalanceDirective'
 ]);
 
 phonecatApp.config(['$routeProvider',

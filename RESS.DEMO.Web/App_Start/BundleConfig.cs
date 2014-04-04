@@ -47,7 +47,8 @@ namespace RESS.DEMO.Web
             bundles.Add(new ScriptBundle("~/bundles/checkBalance").Include(
                         "~/Scripts/CheckBalance/checkBalanceDirective.js",
                         "~/Scripts/CheckBalance/checkBalanceController.js",
-                        "~/Scripts/CheckBalance/checkBalanceServices.js"
+                        "~/Scripts/CheckBalance/checkBalanceServices.js",
+                        "~/Scripts/CheckBalance/client1CheckBalanceDirective.js"
                         ));
             
             bundles.Add(new ScriptBundle("~/bundles/giftSend").Include(
