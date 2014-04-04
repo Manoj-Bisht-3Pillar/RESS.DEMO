@@ -3,12 +3,17 @@
 @{
     Layout = null;
 }
-<a id="Button1" type="button" value="English" class="btn btn-success" ng-href="#/Homes/1/en" >English</a>
-<a id="Button1" type="button" value="Frech" class="btn btn-success" ng-href="#/Homes/1/fr" />French</a>
-<a id="Button1" type="button" value="Spanish" class="btn btn-success" ng-href="#/Homes/1/es" />Spanish</a>
+<div class="row">
+    <div class="col-lg-7"></div>
+    <div class="col-lg-5">
+        <a id="Button1" type="button" value="English" class="btn btn-success" ng-href="#/Homes/1/en">English</a>
+        <a id="Button1" type="button" value="Frech" class="btn btn-success" ng-href="#/Homes/1/fr" />French</a>
+        <a id="Button1" type="button" value="Spanish" class="btn btn-success" ng-href="#/Homes/1/es" />Spanish</a>
+    </div>
+</div>
+<br/>
 @foreach (RESS.DEMO.Web.Interface.BusinessFunction pageBusinessFunction in Model.Body.Function)
 {
     @AngularTag.Directive(pageBusinessFunction.directiveTag);
 }
-
 
