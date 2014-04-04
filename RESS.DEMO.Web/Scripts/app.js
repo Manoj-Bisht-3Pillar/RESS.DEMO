@@ -4,10 +4,9 @@
 var phonecatApp = angular.module('phonecatApp', [
   'ngRoute',
   'phonecatAnimations',
-  'phonecatDirective',
-  'phonecatControllers',
+  'checkBalanceControllers',
+  'checkBalanceDirective',
   'phonecatFilters',
-  'phonecatServices'
 ]);
 
 phonecatApp.config(['$routeProvider',
@@ -15,7 +14,7 @@ phonecatApp.config(['$routeProvider',
     $routeProvider.
       when('/Homes', {
         templateUrl: 'Home/HomeBody',
-        controller: 'PhoneListCtrl2'
+        controller: 'checkBalanceControllers'
       }).
       when('/phones/:phoneId', {
           templateUrl: 'partials/DepositCheck',
