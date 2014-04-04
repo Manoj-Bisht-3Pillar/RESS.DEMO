@@ -26,8 +26,8 @@ phonecatDirective.directive('checkBalance', function () {
         scope: {
             eventHandler: '&ngClick'
         },      
-        templateUrl: 'Home/CheckBalance'
-        
+        templateUrl: 'Home/CheckBalance',
+        controller: 'PhoneListCtrl2',
     };
     
 });
