@@ -10,7 +10,7 @@ namespace RESS.DEMO.Web.Models
 
     public static class AngularTag
     {
-        public static MvcHtmlString Directive(string controller, string directive)
+        public static MvcHtmlString Directive(string directive)
         {
             StringBuilder directiveTag = new StringBuilder();
             directiveTag.Append("<");

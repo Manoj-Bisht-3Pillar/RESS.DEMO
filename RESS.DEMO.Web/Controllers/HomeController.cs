@@ -13,114 +13,68 @@ namespace RESS.DEMO.Web.Controllers
         //
         // GET: /Home/
 
-        public ActionResult Index( int? id)
+        public ActionResult Index(int? id)
         {
             IPage page = null;
-            if (id == 1)
-            {
-                BusinessFunction checkBalance = new CheckBalance();
-                checkBalance.viewIdentifierByClient = "CheckBalance";
-
-                BusinessFunction despositCheck = new DepositCheck();
-                despositCheck.viewIdentifierByClient = "DepositCheck";
-
-
-                IPageSection homeBody = new HomeBody();
-                List<BusinessFunction> funcs = new List<BusinessFunction>();
-
-                homeBody.Function.Add(checkBalance);
-                homeBody.Function.Add(despositCheck);
-
-                page = new HomePage(homeBody);
-
-            }
-            else
-            {
-                BusinessFunction checkBalance = new CheckBalance();
-                checkBalance.viewIdentifierByClient = "CheckBalance";
-
-                BusinessFunction despositCheck = new DepositCheck();
-                despositCheck.viewIdentifierByClient = "DepositCheck";
-
-                BusinessFunction giftCard = new GiftCard();
-                giftCard.viewIdentifierByClient = "GiftCard";
-
-                IPageSection homeBody = new HomeBody();
-                List<BusinessFunction> funcs = new List<BusinessFunction>();
-
-                homeBody.Function.Add(checkBalance);
-                homeBody.Function.Add(despositCheck);
-                homeBody.Function.Add(giftCard);
-
-                page = new HomePage(homeBody);
-            }
             return View(page);
-
         }
 
         public ActionResult HomeBody(int? id)
         {
             IPage page = null;
+            BusinessFunction checkBalance = new CheckBalance();
+            checkBalance.viewIdentifierByClient = "CheckBalance";
+            checkBalance.directiveTag = "check-balance";
+
+            BusinessFunction despositCheck = new DepositCheck();
+            despositCheck.viewIdentifierByClient = "DepositCheck";
+            despositCheck.directiveTag = "deposit-check";
+
+            BusinessFunction giftCard = new GiftCard();
+            giftCard.viewIdentifierByClient = "GiftCard";
+            giftCard.directiveTag = "gift-card";
+
+            IPageSection homeBody = new HomeBody();
+            List<BusinessFunction> funcs = new List<BusinessFunction>();
+
+
             if (id == 1)
             {
-                BusinessFunction checkBalance = new CheckBalance();
-                checkBalance.viewIdentifierByClient = "CheckBalance";
-
-                BusinessFunction despositCheck = new DepositCheck();
-                despositCheck.viewIdentifierByClient = "DepositCheck";
-
-
-                IPageSection homeBody = new HomeBody();
-                List<BusinessFunction> funcs = new List<BusinessFunction>();
-
                 homeBody.Function.Add(checkBalance);
                 homeBody.Function.Add(despositCheck);
-
-                page = new HomePage(homeBody);
-
             }
             else
             {
-                BusinessFunction checkBalance = new CheckBalance();
-                checkBalance.viewIdentifierByClient = "CheckBalance";
-
-                BusinessFunction despositCheck = new DepositCheck();
-                despositCheck.viewIdentifierByClient = "DepositCheck";
-
-                BusinessFunction giftCard = new GiftCard();
-                giftCard.viewIdentifierByClient = "GiftCard";
-
-                IPageSection homeBody = new HomeBody();
-                List<BusinessFunction> funcs = new List<BusinessFunction>();
-
                 homeBody.Function.Add(checkBalance);
                 homeBody.Function.Add(despositCheck);
                 homeBody.Function.Add(giftCard);
-
-                page = new HomePage(homeBody);
             }
+            page = new HomePage(homeBody);
             return View(page);
-
         }
 
         public ActionResult CheckBalance()
         {
-
-            return View("CheckBalance");
+            //get check balance specific features from backend
+            CheckBalance checkBalance = new CheckBalance();
+            checkBalance.directiveTag = "check-balance";
+            return View("CheckBalance", checkBalance);
         }
 
 
         public ActionResult DepositCheck()
         {
-
-            return View("DepositCheck");
+            DepositCheck depositCheck = new DepositCheck();
+            depositCheck.directiveTag = "deposit-check";
+            return View("DepositCheck", depositCheck);
         }
 
 
         public ActionResult GiftCard()
         {
-
-            return View("GiftCard");
+            GiftCard giftCard = new GiftCard();
+            giftCard.directiveTag = "gift-card";
+            return View("GiftCard", giftCard);
         }
 
 
