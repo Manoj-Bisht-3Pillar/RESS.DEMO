@@ -1,4 +1,4 @@
-var phonecatDirective = angular.module('blogSpace.directives', []);
+var phonecatDirective = angular.module('phonecatDirective', []);
 
 phonecatDirective.directive('blogSearch', function ($rootScope) {
     return {
@@ -25,8 +25,9 @@ phonecatDirective.directive('checkBalance', function () {
         transclude: true,
         scope: {
             eventHandler: '&ngClick'
-        },
-        templateUrl: 'Views/Shared/CheckBalance.cshtml',
+        },      
+        templateUrl: 'Home/CheckBalance'
+        
     };
     
 });
