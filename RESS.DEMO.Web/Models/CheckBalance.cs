@@ -7,5 +7,7 @@ namespace RESS.DEMO.Web.Interface
 {
     public class CheckBalance : BusinessFunction
     {
+        public string accountHolderLabel = string.Empty;
+        public string title = string.Empty; 
     }
 }

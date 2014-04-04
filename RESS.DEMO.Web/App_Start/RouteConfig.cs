@@ -18,6 +18,12 @@ namespace RESS.DEMO.Web
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+            name: "BussFunction",
+            url: "{controller}/{action}/{clientid}/{lang}",
+            defaults: new { controller = "Home", action = "CheckBalance", clientid = UrlParameter.Optional, lang=UrlParameter.Optional }
+            );
         }
     }
 }

@@ -5765,6 +5765,7 @@
     <Content Include="node_modules\shelljs\src\to.js" />
     <Content Include="node_modules\shelljs\src\toEnd.js" />
     <Content Include="node_modules\shelljs\src\which.js" />
+    <Content Include="Resources\img\download.svg" />
     <Content Include="Scripts\animations.js" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\CheckBalance\checkBalanceDirective.js" />
