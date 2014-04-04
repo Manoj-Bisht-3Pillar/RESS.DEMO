@@ -5773,6 +5773,7 @@
     <Content Include="Scripts\filters.js" />
     <Content Include="Scripts\Gift\giftManagerDirective.js" />
     <Content Include="Scripts\Gift\giftManagerService.js" />
+    <Content Include="Scripts\commonControllers.js" />
     <Content Include="Scripts\services.js" />
     <Content Include="app\partials\phone-detail.html" />
     <Content Include="app\partials\phone-list.html" />
