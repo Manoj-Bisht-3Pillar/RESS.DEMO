@@ -33,21 +33,29 @@ module.exports = function (grunt) {
               compile: {
                 options: {
                   sourcemap: true,
-                  loadPath: ['bower-components'
-                            , 'sass/bootstrap'
-                            , 'sass']
+                  loadPath: []
                 },
                 files: {
-                    'build/css/app.css': 'Content/sass/bootstrap.scss'
+                    'build/css/primary.css' : 'AAstylesheet/bootstrap.scss',
+                    'build/css/phone.css': 'AAstylesheet/Breakpoints/Phone/phone.scss',
+                    'build/css/tablet.css': 'AAstylesheet/Breakpoints/Tablet/tablet.scss',
+                    'build/css/desktop.css': 'AAstylesheet/Breakpoints/Desktop/desktop.scss',
+                    'build/theme/theme1.css': 'AAstylesheet/themes/theme1.scss',
+                    'build/theme/theme2.css': 'AAstylesheet/themes/theme2.scss'
                 }
               }
             },
             
-            //Object to combine css
+            //Object to sort css properties
             csscomb: {
               build: {
                 files: {
-                    'build/css/app.css': 'Content/css/app.css'
+                    'build/css/primary.css' : 'build/css/primary.css',
+                    'build/css/phone.css': 'build/css/phone.css',
+                    'build/css/tablet.css': 'build/css/tablet.css',
+                    'build/css/desktop.css': 'build/css/desktop.css',
+                    'build/theme/theme1.css' : 'build/theme/theme1.css',
+                    'build/theme/theme2.css' : 'build/theme/theme2.css'
                 }
               }
             },
@@ -68,8 +76,8 @@ module.exports = function (grunt) {
                     separator:';'
                 },
               css: {
-                  src: ['build/css/app.css.map', 'build/css/app.css'],
-                  dest: 'build/css/app.css'
+                  src: ['build/css/primary.css', 'build/css/phone.css', 'build/css/tablet.css', 'build/css/desktop.css'],
+                  dest: 'build/app.css'
               }
             },
 
@@ -79,8 +87,8 @@ module.exports = function (grunt) {
                 options: {
                   report: 'min',
                 },
-                src: 'build/css/app.css',
-                dest: 'build/css/app.css'
+                src: 'build/app.css',
+                dest: 'build/app.css'
               }
             }
 
