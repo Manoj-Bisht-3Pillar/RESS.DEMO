@@ -65,7 +65,7 @@ namespace RESS.DEMO.Web.Controllers
             if (clientid == 1)
             {
                 checkBalance.directiveTag = "client1-checkbalance";
-                checkBalance.controller = "Client1-Checkbalance";
+                checkBalance.controller = "Client1Checkbalance";
                 
             }
             else
