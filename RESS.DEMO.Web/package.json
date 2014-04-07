@@ -14,5 +14,5 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-contrib-cssmin": "~0.9.0",
     "grunt-csscomb": "~2.0.1"
-  },
+	}
 }
