@@ -16,7 +16,7 @@ var phonecatApp = angular.module('phonecatApp', [
 phonecatApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/Homes/1/:language', {
+      when('/Homes/:client/:language', {
         templateUrl: 'Home/HomeBody',
         controller: 'commonControllers'
       }).
@@ -25,6 +25,6 @@ phonecatApp.config(['$routeProvider',
         controller: 'PhoneDetailCtrl'
       }).
       otherwise({
-        redirectTo: '/Homes/1/:language'
+          redirectTo: '/Homes/:client/:language'
       });
   }]);
