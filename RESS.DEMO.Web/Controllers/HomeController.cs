@@ -21,6 +21,8 @@ namespace RESS.DEMO.Web.Controllers
 
         public ActionResult HomeBody(int? id)
         {
+            string domainURL = Request.Url.ToString();
+
             IPage page = null;
             BusinessFunction checkBalance = new CheckBalance();
             checkBalance.viewIdentifierByClient = "CheckBalance";
