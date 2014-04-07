@@ -11,11 +11,10 @@ checkBalanceDirective.directive('checkBalance', function ($rootScope) {
         },
         link: function(scope, element, attrs) {
             scope.getContentUrl = function () {
-                return 'home/checkbalance/0/' + $rootScope.language;
+                return 'home/checkbalance/' + $rootScope.client + '/' + $rootScope.language;
             }
         },
         template: '<div ng-include="getContentUrl()"></div>',
-        //templateUrl: 'Home/CheckBalance' + ,
         controller: 'checkBalanceControllers',
     };
 
