@@ -391,6 +391,13 @@
     <Content Include="bower_components\jquery\test\unit\support.js" />
     <Content Include="bower_components\jquery\test\unit\traversing.js" />
     <Content Include="bower_components\jquery\test\unit\wrap.js" />
+    <Content Include="build\app.css" />
+    <Content Include="build\css\desktop.css" />
+    <Content Include="build\css\phone.css" />
+    <Content Include="build\css\primary.css" />
+    <Content Include="build\css\tablet.css" />
+    <Content Include="build\theme\theme1.css" />
+    <Content Include="build\theme\theme2.css" />
     <Content Include="Gruntfile.js" />
     <Content Include="node_modules\.bin\r.js" />
     <Content Include="node_modules\bower\Gruntfile.js" />
@@ -8253,6 +8260,12 @@
     <Content Include="AAstylesheet\Sections\_print.scss" />
     <Content Include="AAstylesheet\themes\theme1.scss" />
     <Content Include="AAstylesheet\themes\theme2.scss" />
+    <Content Include="build\css\desktop.css.map" />
+    <Content Include="build\css\phone.css.map" />
+    <Content Include="build\css\primary.css.map" />
+    <Content Include="build\css\tablet.css.map" />
+    <Content Include="build\theme\theme1.css.map" />
+    <Content Include="build\theme\theme2.css.map" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\Gift\giftManagerController.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
