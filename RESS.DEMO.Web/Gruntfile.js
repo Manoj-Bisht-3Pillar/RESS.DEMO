@@ -36,12 +36,12 @@ module.exports = function (grunt) {
                   loadPath: []
                 },
                 files: {
-                    'build/css/primary.css' : 'AAstylesheet/bootstrap.scss',
-                    'build/css/phone.css': 'AAstylesheet/Breakpoints/Phone/phone.scss',
-                    'build/css/tablet.css': 'AAstylesheet/Breakpoints/Tablet/tablet.scss',
-                    'build/css/desktop.css': 'AAstylesheet/Breakpoints/Desktop/desktop.scss',
-                    'build/theme/theme1.css': 'AAstylesheet/themes/theme1.scss',
-                    'build/theme/theme2.css': 'AAstylesheet/themes/theme2.scss'
+                    'build/css/primary.css' : 'AAstylesheet/Stylesheet/bootstrap.scss',
+                    'build/css/phone.css': 'AAstylesheet/Stylesheet/Breakpoints/Phone/phone.scss',
+                    'build/css/tablet.css': 'AAstylesheet/Stylesheet/Breakpoints/Tablet/tablet.scss',
+                    'build/css/desktop.css': 'AAstylesheet/Stylesheet/Breakpoints/Desktop/desktop.scss',
+                    'build/theme/theme1.css': 'AAstylesheet/Stylesheet/themes/theme1.scss',
+                    'build/theme/theme2.css': 'AAstylesheet/Stylesheet/themes/theme2.scss'
                 }
               }
             },
