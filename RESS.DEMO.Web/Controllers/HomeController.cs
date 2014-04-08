@@ -1,5 +1,6 @@
 ﻿using RESS.DEMO.Web.Interface;
 using RESS.DEMO.Web.Models;
+using RESS.DEMO.Web.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,77 +20,54 @@ namespace RESS.DEMO.Web.Controllers
             return View(page);
         }
 
+        //public ActionResult Index(int? id)
+        //{
+        //    if (!id.HasValue)
+        //    {
+        //        id = 1;
+        //    }
+
+        //    IPage page = null;
+        //    BusinessFunctionServices businessService = new BusinessFunctionServices();
+        //    TenantBusinessFunction tenantBusinessFunction = businessService.GetTenantBusinessFunction(id);
+        //    IPageSection homeBody = new HomeBody();
+        //    homeBody.Function = tenantBusinessFunction.tenantBusinessFunctions;
+        //    page = new HomePage(homeBody);
+        //    return View(page);
+        //}
+
         public ActionResult HomeBody(int? id)
         {
-            string domainURL = Request.Url.ToString();
+            if (!id.HasValue)
+            {
+                id = 1;
+            }
 
             IPage page = null;
-            BusinessFunction checkBalance = new CheckBalance();
-            checkBalance.viewIdentifierByClient = "CheckBalance";
-            checkBalance.directiveTag = "check-balance";
-
-            BusinessFunction despositCheck = new DepositCheck();
-            despositCheck.viewIdentifierByClient = "DepositCheck";
-            despositCheck.directiveTag = "deposit-check";
-
-            BusinessFunction giftCard = new GiftCard();
-            giftCard.viewIdentifierByClient = "GiftCard";
-            giftCard.directiveTag = "gift-card";
-
+            BusinessFunctionServices businessService = new BusinessFunctionServices();
+            TenantBusinessFunction tenantBusinessFunction = businessService.GetTenantBusinessFunctions(id);
             IPageSection homeBody = new HomeBody();
-            List<BusinessFunction> funcs = new List<BusinessFunction>();
-
-
-            if (id == 1)
-            {
-                homeBody.Function.Add(checkBalance);
-                homeBody.Function.Add(despositCheck);
-            }
-            else
-            {
-                homeBody.Function.Add(checkBalance);
-                homeBody.Function.Add(despositCheck);
-                homeBody.Function.Add(giftCard);
-            }
+            homeBody.Function = tenantBusinessFunction.tenantBusinessFunctions;
             page = new HomePage(homeBody);
             return View(page);
         }
 
         public ActionResult CheckBalance(int? clientid, string lang)
         {
+            if (!clientid.HasValue)
+            {
+                clientid = 1;
+            }
+
+            if (string.IsNullOrEmpty(lang))
+            {
+                lang ="en";
+            }
+
+
             //get check balance specific features from backend
-            CheckBalance checkBalance = new CheckBalance();
-
-            checkBalance.directiveTag = "check-balance";
-            checkBalance.controller = "CheckBalance";
-
-            //The below condition will be fetched from database configurations
-            if (clientid == 1)
-            {
-                checkBalance.directiveTag = "client1-checkbalance";
-                checkBalance.controller = "Client1Checkbalance";
-                
-            }
-            else
-            {
-                checkBalance.directiveTag = "check-balance";
-                checkBalance.controller = "CheckBalance";
-            }
-
-            checkBalance.accountHolderLabel = "Accout Holder name (en)";
-            checkBalance.title = "Check balance (en)";
-
-            //The below condition will be fetched from db
-            if (lang == "fr")
-            {
-                checkBalance.accountHolderLabel = "Accout Holder name (fr)";
-                checkBalance.title = "Check balance (fr)";
-            }
-            else if (lang =="es")
-            {
-                checkBalance.accountHolderLabel = "Accout Holder name (es)";
-                checkBalance.title = "Check balance (es)";
-            }
+            CheckBalanceServices checkBalanceService = new CheckBalanceServices();
+            CheckBalance checkBalance = checkBalanceService.GetContent(clientid, lang);
 
             return View(checkBalance.controller, checkBalance);
         }

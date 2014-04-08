@@ -126,7 +126,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -141,7 +143,10 @@
     <Compile Include="Models\HomeHeader.cs" />
     <Compile Include="Models\HomePage.cs" />
     <Compile Include="Interface\IPage.cs" />
+    <Compile Include="Models\TenantBusinessFunction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Services\BusinessFunctionServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
@@ -8277,7 +8282,9 @@
     <Content Include="Views\Shared\phone-list.cshtml" />
     <Content Include="Views\Shared\phone-detail.cshtml" />
     <Content Include="Views\Home\HomeBody.cshtml" />
-    <Content Include="Views\Shared\Client1CheckBalance.cshtml" />
+    <Content Include="Views\Shared\CheckBalance-Layout.cshtml" />
+    <Content Include="Views\Main\Index.cshtml" />
+    <Content Include="Views\Account\CheckBalance.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AAstylesheet\Stylesheet\Vendors\" />
