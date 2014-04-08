@@ -14,6 +14,7 @@
 
     @Scripts.Render("~/bundles/app")
     @Scripts.Render("~/bundles/animations")
+    @Scripts.Render("~/bundles/angularResource")
     @Scripts.Render("~/bundles/filters")
     @Scripts.Render("~/bundles/commonControllers")
 
@@ -27,16 +28,16 @@
             @RenderSection("Header", required: false)
             <div class="row">
                 <div class="col-lg-4">
-                    <a id="Button1" type="button" value="Spanish" class="btn btn-success" ng-href="#/Homes/1/en">Client1</a>
-                    <a id="Button1" type="button" value="Spanish" class="btn btn-success" ng-href="#/Homes/2/en">Client2</a>
+                    <a id="Button1" type="button" value="Client1" class="btn btn-success" ng-href="#/Homes/1/en">Client1</a>
+                    <a id="Button2" type="button" value="Client2" class="btn btn-success" ng-href="#/Homes/2/en">Client2</a>
                 </div>
                 <div class="col-lg-3">
 
                 </div>
                 <div class="col-lg-5 text-right">
-                    <a id="Button1" type="button" value="English" class="btn btn-info" ng-href="#/Homes/{{client}}/en">English</a>
-                    <a id="Button1" type="button" value="Frech" class="btn btn-info" ng-href="#/Homes/{{client}}/fr">French</a>
-                    <a id="Button1" type="button" value="Spanish" class="btn btn-info" ng-href="#/Homes/{{client}}/es">Spanish</a>
+                    <a id="Button3" type="button" value="English" class="btn btn-info" ng-href="#/Homes/{{client}}/en">English</a>
+                    <a id="Button4" type="button" value="Frech" class="btn btn-info" ng-href="#/Homes/{{client}}/fr">French</a>
+                    <a id="Button5" type="button" value="Spanish" class="btn btn-info" ng-href="#/Homes/{{client}}/es">Spanish</a>
                 </div>
             </div>
             <br />

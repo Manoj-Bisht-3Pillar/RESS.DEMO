@@ -3,14 +3,14 @@
 /* App Module */
 var phonecatApp = angular.module('phonecatApp', [
   'ngRoute',
+  'ngResource',
   'phonecatAnimations',
   'commonControllers',
   'checkBalanceControllers',
   'checkBalanceDirective',
-  'phonecatFilters',
+  'checkBalanceService',
   'depositCheckDirective',
-  'giftManagerDirective',
-  'client1CheckBalanceDirective'
+  'giftManagerDirective'
 ]);
 
 phonecatApp.config(['$routeProvider',

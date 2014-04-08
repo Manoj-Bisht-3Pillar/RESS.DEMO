@@ -26,6 +26,9 @@ namespace RESS.DEMO.Web
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                         "~/Scripts/angular*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/angularResource").Include(
+            "~/Scripts/angular-resource.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                         "~/Scripts/app.js"));
 
