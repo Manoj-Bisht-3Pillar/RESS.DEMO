@@ -2,7 +2,7 @@
 <html lang="en" ng-app="phonecatApp">
 <head>
     <meta charset="utf-8">
-    <title>Google Phone Gallery</title>
+    <title>FIS</title>
     <!-- app.css is a minified primary css -->
     <link rel="stylesheet" href="../build/app.css">
     
@@ -25,6 +25,21 @@
     <div class="container">
         <div class="row" style="margin-top:20px;">
             @RenderSection("Header", required: false)
+            <div class="row">
+                <div class="col-lg-4">
+                    <a id="Button1" type="button" value="Spanish" class="btn btn-success" ng-href="#/Homes/1/fr">Client1</a>
+                    <a id="Button1" type="button" value="Spanish" class="btn btn-success" ng-href="#/Homes/2/en">Client2</a>
+                </div>
+                <div class="col-lg-3">
+
+                </div>
+                <div class="col-lg-5 text-right">
+                    <a id="Button1" type="button" value="English" class="btn btn-info" ng-href="#/Homes/{{client}}/en">English</a>
+                    <a id="Button1" type="button" value="Frech" class="btn btn-info" ng-href="#/Homes/{{client}}/fr">French</a>
+                    <a id="Button1" type="button" value="Spanish" class="btn btn-info" ng-href="#/Homes/{{client}}/es">Spanish</a>
+                </div>
+            </div>
+            <br />
             @RenderBody()
             @RenderSection("Left", required: false)
             @RenderSection("Right", required: false)
