@@ -8285,6 +8285,7 @@
     <Content Include="Views\Shared\CheckBalance-Layout.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\Account\CheckBalance.cshtml" />
+    <Content Include="Views\Account\CheckBalance-Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AAstylesheet\Stylesheet\Vendors\" />

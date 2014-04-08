@@ -10,7 +10,7 @@ commonControllers.controller('commonControllers', ['$scope', '$rootScope', '$rou
     $rootScope.client = $routeParams.client;
     $rootScope.language = $routeParams.language;
 
-    $route.current.templateUrl = 'Home/HomeBody/' + $routeParams.client;
+    $route.current.templateUrl = 'Home/Index/' + $routeParams.client;
 
     $.get($route.current.templateUrl, function (data) {
         $scope.$apply(function () {

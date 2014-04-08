@@ -26,7 +26,7 @@ phonecatDirective.directive('checkBalance', function () {
         scope: {
             eventHandler: '&ngClick'
         },      
-        templateUrl: 'Home/CheckBalance',
+        templateUrl: 'Account/CheckBalance',
         controller: 'PhoneListCtrl2',
     };
     

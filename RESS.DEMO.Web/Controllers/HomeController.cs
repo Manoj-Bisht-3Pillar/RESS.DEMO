@@ -16,28 +16,6 @@ namespace RESS.DEMO.Web.Controllers
 
         public ActionResult Index(int? id)
         {
-            IPage page = null;
-            return View(page);
-        }
-
-        //public ActionResult Index(int? id)
-        //{
-        //    if (!id.HasValue)
-        //    {
-        //        id = 1;
-        //    }
-
-        //    IPage page = null;
-        //    BusinessFunctionServices businessService = new BusinessFunctionServices();
-        //    TenantBusinessFunction tenantBusinessFunction = businessService.GetTenantBusinessFunction(id);
-        //    IPageSection homeBody = new HomeBody();
-        //    homeBody.Function = tenantBusinessFunction.tenantBusinessFunctions;
-        //    page = new HomePage(homeBody);
-        //    return View(page);
-        //}
-
-        public ActionResult HomeBody(int? id)
-        {
             if (!id.HasValue)
             {
                 id = 1;
@@ -52,25 +30,7 @@ namespace RESS.DEMO.Web.Controllers
             return View(page);
         }
 
-        public ActionResult CheckBalance(int? clientid, string lang)
-        {
-            if (!clientid.HasValue)
-            {
-                clientid = 1;
-            }
-
-            if (string.IsNullOrEmpty(lang))
-            {
-                lang ="en";
-            }
-
-
-            //get check balance specific features from backend
-            CheckBalanceServices checkBalanceService = new CheckBalanceServices();
-            CheckBalance checkBalance = checkBalanceService.GetContent(clientid, lang);
-
-            return View(checkBalance.controller, checkBalance);
-        }
+        
 
 
         public ActionResult DepositCheck()

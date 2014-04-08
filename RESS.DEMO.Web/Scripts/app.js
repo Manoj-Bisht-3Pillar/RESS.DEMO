@@ -17,7 +17,7 @@ phonecatApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/Homes/:client/:language', {
-        templateUrl: 'Home/HomeBody',
+        templateUrl: 'Home/Index',
         controller: 'commonControllers'
       }).
       when('/phones/:phoneId', {
