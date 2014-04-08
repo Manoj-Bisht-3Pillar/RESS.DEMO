@@ -7946,7 +7946,7 @@
     <Content Include="node_modules\shelljs\LICENSE" />
     <Content Include="node_modules\shelljs\package.json" />
     <Content Include="node_modules\shelljs\README.md" />
-    <Content Include="phones\accounts.json" />
+    <Content Include="Data\accounts.json" />
     <Content Include=".bowerrc" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
@@ -8282,8 +8282,6 @@
     <Content Include="Views\Shared\GiftCard.cshtml" />
     <Content Include="Views\Shared\DepositCheck.cshtml" />
     <Content Include="Scripts\version.json" />
-    <Content Include="Views\Shared\phone-list.cshtml" />
-    <Content Include="Views\Shared\phone-detail.cshtml" />
     <Content Include="Views\Home\HomeBody.cshtml" />
     <Content Include="Views\Shared\CheckBalance-Layout.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
