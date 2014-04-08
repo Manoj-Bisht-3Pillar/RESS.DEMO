@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RESS.DEMO.API.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,6 +10,18 @@ namespace RESS.DEMO.API.Controllers
 {
     public class ValuesController : ApiController
     {
+        private List<Client> clientAccount = new List<Client>();
+        public ValuesController()
+        {
+            Account accountInfo1 = new Account{ Id=1, ClientId=1, AccountBalance=2000.20};
+            Client clientInfo1 = new Client { ClientId = 1, ClientName = "David", AccountInfo = accountInfo1 };
+            clientAccount.Add(clientInfo1);
+
+            Account accountInfo2 = new Account { Id = 2, ClientId = 2, AccountBalance = 100000.100 };
+            Client clientInfo2 = new Client { ClientId = 2, ClientName = "John", AccountInfo = accountInfo2 };
+            clientAccount.Add(clientInfo2);
+        }
+
         // GET api/values
         public IEnumerable<string> Get()
         {
@@ -16,16 +29,13 @@ namespace RESS.DEMO.API.Controllers
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public Client Get(int? id)
         {
-            if (id == 0)
+            if(!id.HasValue)
             {
-                return "client 1 balance:- 100";
+                id=1;
             }
-            else
-            {
-                return "client 2 balance:- 200";
-            }
+            return clientAccount.Single(x => x.ClientId.Equals(id));
         }
 
         // POST api/values
