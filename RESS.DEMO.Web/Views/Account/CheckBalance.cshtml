@@ -11,7 +11,7 @@
             <input id="Button1" type="button" value="Check" class="btn btn-success" ng-click="showBalance()" />
         </div>
         <!-- Table -->
-        <div class="table-responsive" ng-show="userdetails[0]">
+        <div class="table-responsive" ng-show="userdetails">
             <table class="table table-bordered">
                 <tr>
                     <th>
@@ -22,8 +22,8 @@
                     </th>
                 </tr>
                 <tr>
-                    <td ng-bind="userdetails[0].name"></td>
-                    <td ng-bind="userdetails[0].balance"></td>
+                    <td ng-bind="userdetails.ClientName"></td>
+                    <td ng-bind="userdetails.AccountInfo.AccountBalance"></td>
                 </tr>
             </table>
         </div>

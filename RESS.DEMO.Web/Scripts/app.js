@@ -25,6 +25,6 @@ phonecatApp.config(['$routeProvider',
         controller: 'PhoneDetailCtrl'
       }).
       otherwise({
-          redirectTo: '/Homes/2/en'
+          redirectTo: '/Homes/1/en'
       });
   }]);

@@ -9,7 +9,7 @@ using System.Web.Http.Cors;
 
 namespace RESS.DEMO.API.Controllers
 {
-    [EnableCors(origins: "http://localhost:24434/", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class ValuesController : ApiController
     {
         private List<Client> clientAccount = new List<Client>();

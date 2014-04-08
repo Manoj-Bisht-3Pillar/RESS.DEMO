@@ -8,7 +8,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">@Model.title</div>
         <div class="panel-body">
-            <div class="table-responsive" ng-show="userdetails[0]">
+            <div class="table-responsive" ng-show="userdetails">
                 <table class="table table-bordered">
                     <tr>
                         <th>
@@ -19,8 +19,8 @@
                         </th>
                     </tr>
                     <tr>
-                        <td ng-bind="userdetails[0].name"></td>
-                        <td ng-bind="userdetails[0].balance"></td>
+                        <td ng-bind="userdetails.ClientName"></td>
+                        <td ng-bind="userdetails.AccountInfo.AccountBalance"></td>
                     </tr>
                 </table>
             </div>
