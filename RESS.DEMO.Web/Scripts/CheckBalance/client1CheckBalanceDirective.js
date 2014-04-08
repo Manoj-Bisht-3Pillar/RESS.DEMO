@@ -9,7 +9,7 @@ client1CheckBalanceDirective.directive('client1Checkbalance', function () {
         scope: {
             eventHandler: '&ngClick'
         },
-        templateUrl: 'Home/CheckBalance',
+        templateUrl: 'Account/CheckBalance',
         controller: 'checkBalanceControllers',
     };
 
