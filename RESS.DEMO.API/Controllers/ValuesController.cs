@@ -5,9 +5,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace RESS.DEMO.API.Controllers
 {
+    [EnableCors(origins: "http://localhost:24434/", headers: "*", methods: "*")]
     public class ValuesController : ApiController
     {
         private List<Client> clientAccount = new List<Client>();
