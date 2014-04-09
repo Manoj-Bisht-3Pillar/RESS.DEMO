@@ -10,5 +10,7 @@ namespace RESS.DEMO.Web.Interface
         public string viewIdentifierByClient;
         public string directiveTag;
         public string controller;
+        public string language;
+        public int clientId;
     }
 }

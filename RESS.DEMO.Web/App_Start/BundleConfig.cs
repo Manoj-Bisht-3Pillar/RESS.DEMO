@@ -26,27 +26,19 @@ namespace RESS.DEMO.Web
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                         "~/Scripts/angular*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/angularResource").Include(
+            "~/Scripts/angular-resource.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                         "~/Scripts/app.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/animations").Include(
                        "~/Scripts/animations.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/controllers").Include(
-                       "~/Scripts/controllers.js"));
-
             bundles.Add(new ScriptBundle("~/bundles/commonControllers").Include(
-                       "~/Scripts/commonControllers.js"));
+                       "~/Scripts/commonController/commonControllers.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/filters").Include(
-                       "~/Scripts/filters.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/services").Include(
-                       "~/Scripts/services.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/directives").Include(
-                       "~/Scripts/directives.js"));
-            
+   
             bundles.Add(new ScriptBundle("~/bundles/checkBalance").Include(
                         "~/Scripts/CheckBalance/checkBalanceDirective.js",
                         "~/Scripts/CheckBalance/checkBalanceController.js",

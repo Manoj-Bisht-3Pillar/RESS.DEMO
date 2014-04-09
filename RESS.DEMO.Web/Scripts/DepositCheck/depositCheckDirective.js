@@ -11,7 +11,6 @@ depositCheckDirective.directive('depositCheck', function () {
             eventHandler: '&ngClick'
         },
         templateUrl: 'Home/DepositCheck',
-        //controller: 'PhoneListCtrl2',
     };
 
 });

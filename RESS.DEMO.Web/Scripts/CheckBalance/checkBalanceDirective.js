@@ -11,7 +11,7 @@ checkBalanceDirective.directive('checkBalance', function ($rootScope) {
         },
         link: function(scope, element, attrs) {
             scope.getContentUrl = function () {
-                return 'home/checkbalance/' + $rootScope.client + '/' + $rootScope.language;
+                return 'Account/checkbalance/' + $rootScope.client + '/' + $rootScope.language;
             }
         },
         template: '<div ng-include="getContentUrl()"></div>',

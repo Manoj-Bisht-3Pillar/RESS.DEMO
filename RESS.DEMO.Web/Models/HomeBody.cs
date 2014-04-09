@@ -18,7 +18,7 @@ namespace RESS.DEMO.Web.Models
             }
             set
             {
-                throw new NotImplementedException();
+                businessFunctionList = value;
             }
         }
     }

@@ -1,23 +1,22 @@
 'use strict';
 
 /* App Module */
-var phonecatApp = angular.module('phonecatApp', [
+var FISApp = angular.module('FISApp', [
   'ngRoute',
-  'phonecatAnimations',
+  'ngResource',
   'commonControllers',
   'checkBalanceControllers',
   'checkBalanceDirective',
-  'phonecatFilters',
+  'checkBalanceService',
   'depositCheckDirective',
-  'giftManagerDirective',
-  'client1CheckBalanceDirective'
+  'giftManagerDirective'
 ]);
 
-phonecatApp.config(['$routeProvider',
+FISApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/Homes/:client/:language', {
-        templateUrl: 'Home/HomeBody',
+        templateUrl: 'Home/Index',
         controller: 'commonControllers'
       }).
       when('/phones/:phoneId', {
@@ -25,6 +24,6 @@ phonecatApp.config(['$routeProvider',
         controller: 'PhoneDetailCtrl'
       }).
       otherwise({
-          redirectTo: '/Homes/2/en'
+          redirectTo: '/Homes/1/en'
       });
   }]);

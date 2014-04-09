@@ -1,0 +1,36 @@
+﻿@model RESS.DEMO.Web.Interface.CheckBalance
+@{
+    Layout = null;
+}
+
+
+<div class="col-lg-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">@Model.title</div>
+        <div class="panel-body">
+            <input id="Button1" type="button" value="Check" class="btn btn-success" ng-click="showBalance()" />
+        </div>
+        <!-- Table -->
+        <div class="table-responsive" ng-show="userdetails">
+            <table class="table table-bordered">
+                <tr>
+                    <th>
+                        @Model.accountHolderLabel
+                    </th>
+                    <th>
+                        Accout Holder balance
+                    </th>
+                </tr>
+                <tr>
+                    <td ng-bind="userdetails.ClientName"></td>
+                    <td ng-bind="userdetails.AccountInfo.AccountBalance"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
