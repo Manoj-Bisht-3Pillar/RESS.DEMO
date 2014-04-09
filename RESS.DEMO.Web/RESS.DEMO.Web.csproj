@@ -153,9 +153,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="AAstylesheet\Stylesheet\bootstrap.css">
-      <DependentUpon>bootstrap.scss</DependentUpon>
-    </Content>
     <Content Include="build\app.css" />
     <Content Include="build\css\desktop.css" />
     <Content Include="build\css\phone.css" />
@@ -5548,7 +5545,6 @@
     <Content Include="Scripts\CheckBalance\client1CheckBalanceDirective.js" />
     <Content Include="Scripts\DepositCheck\depositCheckDirective.js" />
     <Content Include="Scripts\DepositCheck\depositCheckService.js" />
-    <Content Include="Scripts\filters.js" />
     <Content Include="Scripts\Gift\giftManagerDirective.js" />
     <Content Include="Scripts\Gift\giftManagerService.js" />
     <Content Include="Scripts\commonController\commonControllers.js" />
@@ -7833,7 +7829,6 @@
     <Content Include="node_modules\shelljs\LICENSE" />
     <Content Include="node_modules\shelljs\package.json" />
     <Content Include="node_modules\shelljs\README.md" />
-    <Content Include="Data\accounts.json" />
     <Content Include=".bowerrc" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
@@ -7916,7 +7911,7 @@
     </Content>
     <Content Include="AAstylesheet\Tab\themes\theme1Updated.scss" />
     <Content Include="AAstylesheet\Web\themes\theme1Updated.scss" />
-    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="AAstylesheet\Stylesheet\Sections\home.scss" />
     <Content Include="Scripts\Gift\giftManagerController.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
@@ -8163,21 +8158,6 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
-    <Content Include="Scripts\jquery-1.8.2.js" />
-    <Content Include="Scripts\jquery-1.8.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery-ui-1.8.24.js" />
-    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout-2.2.0.debug.js" />
-    <Content Include="Scripts\knockout-2.2.0.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

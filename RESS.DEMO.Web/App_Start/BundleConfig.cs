@@ -9,25 +9,26 @@ namespace RESS.DEMO.Web
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/lib/jquery/jquery.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
-                        "~/Scripts/jquery-ui-{version}.js"));
+                        "~/lib/jqueryui/ui/minified/jquery-ui.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.unobtrusive*",
-                        "~/Scripts/jquery.validate*"));
+            //bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+            //            "~/Scripts/jquery.unobtrusive*",
+            //            "~/Scripts/jquery.validate*"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+                        "~/lib/modernizr/modernizr.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
-                        "~/Scripts/angular*"));
-
-            bundles.Add(new ScriptBundle("~/bundles/angularResource").Include(
-            "~/Scripts/angular-resource.js"));
+                        "~/lib/angular/angular.js",
+                        "~/lib/angular-animate/angular-animate.js",
+                        "~/lib/angular-route/angular-route.js",
+                        "~/lib/angular-resource/angular-resource.js"                        
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                         "~/Scripts/app.js"));
@@ -35,10 +36,21 @@ namespace RESS.DEMO.Web
             bundles.Add(new ScriptBundle("~/bundles/animations").Include(
                        "~/Scripts/animations.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/controllers").Include(
+                       "~/Scripts/controllers.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/commonControllers").Include(
                        "~/Scripts/commonController/commonControllers.js"));
 
-   
+            bundles.Add(new ScriptBundle("~/bundles/filters").Include(
+                       "~/Scripts/filters.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/services").Include(
+                       "~/Scripts/services.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/directives").Include(
+                       "~/Scripts/directives.js"));
+            
             bundles.Add(new ScriptBundle("~/bundles/checkBalance").Include(
                         "~/Scripts/CheckBalance/checkBalanceDirective.js",
                         "~/Scripts/CheckBalance/checkBalanceController.js",
@@ -54,19 +66,19 @@ namespace RESS.DEMO.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
-            bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
-                        "~/Content/themes/base/jquery.ui.core.css",
-                        "~/Content/themes/base/jquery.ui.resizable.css",
-                        "~/Content/themes/base/jquery.ui.selectable.css",
-                        "~/Content/themes/base/jquery.ui.accordion.css",
-                        "~/Content/themes/base/jquery.ui.autocomplete.css",
-                        "~/Content/themes/base/jquery.ui.button.css",
-                        "~/Content/themes/base/jquery.ui.dialog.css",
-                        "~/Content/themes/base/jquery.ui.slider.css",
-                        "~/Content/themes/base/jquery.ui.tabs.css",
-                        "~/Content/themes/base/jquery.ui.datepicker.css",
-                        "~/Content/themes/base/jquery.ui.progressbar.css",
-                        "~/Content/themes/base/jquery.ui.theme.css"));
+            bundles.Add(new StyleBundle("~/Content/themes/base/css  ").Include(
+                        "~/lib/jqueryui/base/jquery.ui.core.css",
+                        "~/lib/jqueryui/base/jquery.ui.resizable.css",
+                        "~/lib/jqueryui/base/jquery.ui.selectable.css",
+                        "~/lib/jqueryui/base/jquery.ui.accordion.css",
+                        "~/lib/jqueryui/base/jquery.ui.autocomplete.css",
+                        "~/lib/jqueryui/base/jquery.ui.button.css",
+                        "~/lib/jqueryui/base/jquery.ui.dialog.css",
+                        "~/lib/jqueryui/base/jquery.ui.slider.css",
+                        "~/lib/jqueryui/base/jquery.ui.tabs.css",
+                        "~/lib/jqueryui/base/jquery.ui.datepicker.css",
+                        "~/lib/jqueryui/base/jquery.ui.progressbar.css",
+                        "~/lib/jqueryui/base/jquery.ui.theme.css"));
         }
     }
 }
