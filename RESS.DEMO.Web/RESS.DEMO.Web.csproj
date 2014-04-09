@@ -5538,7 +5538,6 @@
     <Content Include="Resources\img\gift1.jpg" />
     <Content Include="Resources\img\Gift_Card.png" />
     <Content Include="Resources\img\pscu.png" />
-    <Content Include="Scripts\animations.js" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\CheckBalance\checkBalanceDirective.js" />
     <Content Include="Scripts\CheckBalance\checkBalanceServices.js" />
@@ -5604,10 +5603,6 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\angular-animate.js" />
-    <Content Include="Scripts\angular-resource.js" />
-    <Content Include="Scripts\angular-route.js" />
-    <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\CheckBalance\checkBalanceController.js" />
     <Content Include="Scripts\DepositCheck\depositCheckController.js" />
     <Content Include="Scripts\errors.json" />

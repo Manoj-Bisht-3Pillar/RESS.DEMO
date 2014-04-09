@@ -64,21 +64,21 @@ namespace RESS.DEMO.Web
             bundles.Add(new ScriptBundle("~/bundles/depositCheck").Include(
                         "~/Scripts/DepositCheck/depositCheckDirective.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+            //bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
-            bundles.Add(new StyleBundle("~/Content/themes/base/css  ").Include(
-                        "~/lib/jqueryui/base/jquery.ui.core.css",
-                        "~/lib/jqueryui/base/jquery.ui.resizable.css",
-                        "~/lib/jqueryui/base/jquery.ui.selectable.css",
-                        "~/lib/jqueryui/base/jquery.ui.accordion.css",
-                        "~/lib/jqueryui/base/jquery.ui.autocomplete.css",
-                        "~/lib/jqueryui/base/jquery.ui.button.css",
-                        "~/lib/jqueryui/base/jquery.ui.dialog.css",
-                        "~/lib/jqueryui/base/jquery.ui.slider.css",
-                        "~/lib/jqueryui/base/jquery.ui.tabs.css",
-                        "~/lib/jqueryui/base/jquery.ui.datepicker.css",
-                        "~/lib/jqueryui/base/jquery.ui.progressbar.css",
-                        "~/lib/jqueryui/base/jquery.ui.theme.css"));
+            //bundles.Add(new StyleBundle("~/Content/themes/base/css  ").Include(
+            //            "~/lib/jqueryui/base/jquery.ui.core.css",
+            //            "~/lib/jqueryui/base/jquery.ui.resizable.css",
+            //            "~/lib/jqueryui/base/jquery.ui.selectable.css",
+            //            "~/lib/jqueryui/base/jquery.ui.accordion.css",
+            //            "~/lib/jqueryui/base/jquery.ui.autocomplete.css",
+            //            "~/lib/jqueryui/base/jquery.ui.button.css",
+            //            "~/lib/jqueryui/base/jquery.ui.dialog.css",
+            //            "~/lib/jqueryui/base/jquery.ui.slider.css",
+            //            "~/lib/jqueryui/base/jquery.ui.tabs.css",
+            //            "~/lib/jqueryui/base/jquery.ui.datepicker.css",
+            //            "~/lib/jqueryui/base/jquery.ui.progressbar.css",
+            //            "~/lib/jqueryui/base/jquery.ui.theme.css"));
         }
     }
 }
