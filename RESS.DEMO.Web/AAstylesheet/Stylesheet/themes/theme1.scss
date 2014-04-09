@@ -1,14 +1,14 @@
 @import "AAstylesheet/Stylesheet/Modules/_variables";
 
 .navbar-inverse{
-	background: $brand-warning;
-	.navbar-header a{
-		color: $component-active-color;
+	//background: $brand-warning;
+	.navbar-header a.navbar-brand{
+		color: $component-active-color !important;
 	}
 	.navbar-nav{
 		li.active a,li.active a:hover{
-			background: $component-active-color;
-			color: $brand-warning; 
+			//background: $component-active-color;
+			//color: $brand-warning; 
 		}
 	}
 }

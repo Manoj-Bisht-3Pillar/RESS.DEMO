@@ -153,8 +153,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="AAstylesheet\Stylesheet\themes\theme1.css">
-      <DependentUpon>theme1.scss</DependentUpon>
+    <Content Include="AAstylesheet\Stylesheet\bootstrap.css">
+      <DependentUpon>bootstrap.scss</DependentUpon>
     </Content>
     <Content Include="build\app.css" />
     <Content Include="build\css\desktop.css" />
@@ -7843,10 +7843,30 @@
     <Content Include="build\css\tablet.css.map" />
     <Content Include="build\theme\theme1.css.map" />
     <Content Include="build\theme\theme2.css.map" />
-    <Content Include="AAstylesheet\Stylesheet\bootstrap.scss" />
-    <Content Include="AAstylesheet\Stylesheet\Breakpoints\Desktop\desktop.scss" />
-    <Content Include="AAstylesheet\Stylesheet\Breakpoints\Phone\phone.scss" />
-    <Content Include="AAstylesheet\Stylesheet\Breakpoints\Tablet\tablet.scss" />
+    <Content Include="AAstylesheet\Stylesheet\bootstrap.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="AAstylesheet\Stylesheet\Breakpoints\Desktop\desktop.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="AAstylesheet\Stylesheet\Breakpoints\Phone\phone.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="AAstylesheet\Stylesheet\Breakpoints\Tablet\tablet.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
     <Content Include="AAstylesheet\Stylesheet\Modules\_mixins.scss" />
     <Content Include="AAstylesheet\Stylesheet\Modules\_responsive-utilities.scss" />
     <Content Include="AAstylesheet\Stylesheet\Modules\_utilities.scss" />
@@ -7888,7 +7908,12 @@
     <Content Include="AAstylesheet\Stylesheet\Sections\_print.scss" />
     <Content Include="AAstylesheet\Stylesheet\themes\theme1.scss" />
     <Content Include="AAstylesheet\Stylesheet\themes\theme2.scss" />
-    <Content Include="AAstylesheet\Phones\themes\theme1Updated.scss" />
+    <Content Include="AAstylesheet\Phones\themes\theme1Updated.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
     <Content Include="AAstylesheet\Tab\themes\theme1Updated.scss" />
     <Content Include="AAstylesheet\Web\themes\theme1Updated.scss" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
