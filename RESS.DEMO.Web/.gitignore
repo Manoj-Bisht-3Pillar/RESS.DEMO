@@ -7,3 +7,4 @@ tmp
 angular-phonecat-snapshots
 ../.sass-cache
 .sass-cache
+lib/
