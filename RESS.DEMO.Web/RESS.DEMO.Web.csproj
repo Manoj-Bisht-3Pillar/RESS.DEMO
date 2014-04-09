@@ -5550,7 +5550,7 @@
     <Content Include="Scripts\DepositCheck\depositCheckService.js" />
     <Content Include="Scripts\Gift\giftManagerDirective.js" />
     <Content Include="Scripts\Gift\giftManagerService.js" />
-    <Content Include="Scripts\commonControllers.js" />
+    <Content Include="Scripts\commonController\commonControllers.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -8167,7 +8167,6 @@
     <Content Include="Views\Shared\GiftCard.cshtml" />
     <Content Include="Views\Shared\DepositCheck.cshtml" />
     <Content Include="Scripts\version.json" />
-    <Content Include="Views\Home\HomeBody.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\Account\CheckBalance.cshtml" />
     <Content Include="Views\Account\CheckBalance-Layout.cshtml" />

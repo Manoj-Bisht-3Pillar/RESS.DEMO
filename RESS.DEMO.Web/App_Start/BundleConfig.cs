@@ -36,7 +36,7 @@ namespace RESS.DEMO.Web
                        "~/Scripts/animations.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/commonControllers").Include(
-                       "~/Scripts/commonControllers.js"));
+                       "~/Scripts/commonController/commonControllers.js"));
 
    
             bundles.Add(new ScriptBundle("~/bundles/checkBalance").Include(

@@ -1,10 +1,9 @@
 'use strict';
 
 /* App Module */
-var phonecatApp = angular.module('phonecatApp', [
+var FISApp = angular.module('FISApp', [
   'ngRoute',
   'ngResource',
-  'phonecatAnimations',
   'commonControllers',
   'checkBalanceControllers',
   'checkBalanceDirective',
@@ -13,7 +12,7 @@ var phonecatApp = angular.module('phonecatApp', [
   'giftManagerDirective'
 ]);
 
-phonecatApp.config(['$routeProvider',
+FISApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/Homes/:client/:language', {
