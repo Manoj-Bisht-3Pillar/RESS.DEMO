@@ -35,21 +35,10 @@ namespace RESS.DEMO.Web
             bundles.Add(new ScriptBundle("~/bundles/animations").Include(
                        "~/Scripts/animations.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/controllers").Include(
-                       "~/Scripts/controllers.js"));
-
             bundles.Add(new ScriptBundle("~/bundles/commonControllers").Include(
                        "~/Scripts/commonControllers.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/filters").Include(
-                       "~/Scripts/filters.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/services").Include(
-                       "~/Scripts/services.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/directives").Include(
-                       "~/Scripts/directives.js"));
-            
+   
             bundles.Add(new ScriptBundle("~/bundles/checkBalance").Include(
                         "~/Scripts/CheckBalance/checkBalanceDirective.js",
                         "~/Scripts/CheckBalance/checkBalanceController.js",
