@@ -261,6 +261,7 @@
     <Content Include="AAstylesheet\Web\themes\theme1Updated.scss" />
     <Content Include="AAstylesheet\Stylesheet\Sections\home.scss" />
     <Content Include="Scripts\Gift\giftManagerController.js" />
+    <Content Include="test\unit\controllertest.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
