@@ -20,6 +20,8 @@ module.exports = function (config) {
           'lib/angular-animate/angular-animate.js',
           'lib/angular-mocks/angular-mocks.js',
           'lib/angular-route/angular-route.js',
+          'lib/lodash/dist/lodash.underscore.js',
+          'lib/restangular/dist/restangular.js',
           'Scripts/CheckBalance/checkBalanceServices.js',
           'Scripts/**/*.js',
           'Scripts/*.js',
