@@ -2,6 +2,5 @@
 
 /* jasmine specs for directives go here */
 
-describe('directives', function() {
-
+describe('directive tests', function () {
 });

@@ -7,7 +7,9 @@ checkBalanceService.factory("getUserDetails", ['$rootScope', 'Restangular', func
     var _userData = Restangular.one('values', $rootScope.client).get().then(function (user) {
         return user;
     });
+    var _test = "lalit";
     return {
+        test: _test,
         userData: _userData
     }
 }]);
