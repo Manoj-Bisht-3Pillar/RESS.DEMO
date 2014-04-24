@@ -5,8 +5,10 @@ checkBalanceControllers.controller('checkBalanceControllers', ['$scope', '$http'
     
     $scope.text = "Hello World!";
     $scope.showBalance = function () {
-        console.log(getUserDetails.userData);
-        $scope.userdetails = getUserDetails.userData;
+         return getUserDetails.userData.then(function (data) {
+             $scope.userdetails = data;
+             return data;
+        });
     };
 }]);
 

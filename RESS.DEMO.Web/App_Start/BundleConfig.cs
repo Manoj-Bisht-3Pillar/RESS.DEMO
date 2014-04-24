@@ -31,6 +31,12 @@ namespace RESS.DEMO.Web
                         "~/lib/angular-resource/angular-resource.js"
                         ));
 
+            bundles.Add(new ScriptBundle("~/bundles/thirdParty").Include(
+                    "~/lib/restangular/dist/restangular.js",
+                    "~/lib/lodash/dist/lodash.underscore.js",
+                    "~/lib/angular-mocks/angular-mocks.js"
+                ));
+
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                         "~/Scripts/app.js"));
 

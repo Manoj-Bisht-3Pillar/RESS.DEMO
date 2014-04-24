@@ -3,7 +3,7 @@
 /* App Module */
 var FISApp = angular.module('FISApp', [
   'ngRoute',
-  'ngResource',
+  'ngResource',//Need to remove once completely shifted to restangular
   'restangular',
   'commonControllers',
   'checkBalanceControllers',
@@ -27,4 +27,9 @@ FISApp.config(['$routeProvider',
       otherwise({
           redirectTo: '/Homes/1/en'
       });
-  }]);
+  }])
+.config(function(RestangularProvider) {
+    RestangularProvider.setBaseUrl('http://localhost:24434/api/');
+    RestangularProvider.setRestangularFields({ clientId: '_id' });
+
+})

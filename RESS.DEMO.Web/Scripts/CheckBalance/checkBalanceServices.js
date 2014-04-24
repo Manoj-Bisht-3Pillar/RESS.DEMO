@@ -2,12 +2,15 @@
 
 var checkBalanceService = angular.module('checkBalanceService', []);
 
-checkBalanceService.factory("getUserDetails", ['$resource', '$rootScope', function ($resource, $rootScope) {
-    var _getData = $resource('http://localhost:24434/api/values/:clientID');
-    var _userData = _getData.get({ clientID: $rootScope.client }).then(function (data) {
-        return data;
+checkBalanceService.factory("getUserDetails", ['$rootScope', 'Restangular', function ($rootScope, Restangular) {
+
+    var _userData = Restangular.one('values', $rootScope.client).get().then(function (user) {
+        return user;
+
     });
+    var _test = "lalit";
     return {
+        test: _test,
         userData: _userData
     }
 }]);
