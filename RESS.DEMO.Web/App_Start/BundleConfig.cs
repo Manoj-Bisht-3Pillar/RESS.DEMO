@@ -25,9 +25,10 @@ namespace RESS.DEMO.Web
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                         "~/lib/angular/angular.js",
+                        "~/lib/restangular/dist/restangular.js",
                         "~/lib/angular-animate/angular-animate.js",
                         "~/lib/angular-route/angular-route.js",
-                        "~/lib/angular-resource/angular-resource.js"                        
+                        "~/lib/angular-resource/angular-resource.js"
                         ));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(

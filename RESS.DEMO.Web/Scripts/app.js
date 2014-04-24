@@ -4,6 +4,7 @@
 var FISApp = angular.module('FISApp', [
   'ngRoute',
   'ngResource',
+  'restangular',
   'commonControllers',
   'checkBalanceControllers',
   'checkBalanceDirective',
