@@ -11,6 +11,9 @@ namespace RESS.DEMO.Web
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/lib/jquery/jquery.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/stacktrace").Include
+                ("~/node_modules/stack-trace/lib/stack-trace.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/lib/jqueryui/ui/minified/jquery-ui.js"));
 
@@ -57,7 +60,13 @@ namespace RESS.DEMO.Web
 
             bundles.Add(new ScriptBundle("~/bundles/directives").Include(
                        "~/Scripts/directives.js"));
-            
+
+            bundles.Add(new ScriptBundle("~/bundles/errorLog").Include(
+                       "~/Scripts/ErrorLog/errorLogService.js",
+                       "~/Scripts/ErrorLog/stacktraceService.js",
+                       "~/Scripts/ErrorLog/loggingService.js",
+                       "~/Scripts/ErrorLog/applicationLoggingService.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/checkBalance").Include(
                         "~/Scripts/CheckBalance/checkBalanceDirective.js",
                         "~/Scripts/CheckBalance/checkBalanceController.js",

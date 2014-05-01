@@ -1209,6 +1209,10 @@
     <Content Include="Scripts\CheckBalance\client1CheckBalanceDirective.js" />
     <Content Include="Scripts\DepositCheck\depositCheckDirective.js" />
     <Content Include="Scripts\DepositCheck\depositCheckService.js" />
+    <Content Include="Scripts\ErrorLog\applicationLoggingService.js" />
+    <Content Include="Scripts\ErrorLog\errorLogService.js" />
+    <Content Include="Scripts\ErrorLog\loggingService.js" />
+    <Content Include="Scripts\ErrorLog\stacktraceService.js" />
     <Content Include="Scripts\Gift\giftManagerDirective.js" />
     <Content Include="Scripts\Gift\giftManagerService.js" />
     <Content Include="Scripts\commonController\commonControllers.js" />
