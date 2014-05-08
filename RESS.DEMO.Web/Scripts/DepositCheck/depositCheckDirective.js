@@ -5,8 +5,7 @@ var depositCheckDirective = angular.module('depositCheckDirective', []);
 depositCheckDirective.directive('depositCheck', function () {
 
     return {
-        restrict: 'AE',
-        transclude: true,
+        restrict: 'E',
         scope: {
             eventHandler: '&ngClick'
         },
