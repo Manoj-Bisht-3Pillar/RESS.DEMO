@@ -7,7 +7,7 @@ alertDirective.directive('alertDirective', function () {
         restrict: 'E',
         compile: function(element, attrs){
             var tag = '<div ng-repeat="(key,val) in alerts" class="alert {{key}}">' +
-                        '<h1>hello world</h1>' +
+                        '<div ng-repeat="msg in val">{{msg}}</div>' +
                       '</div>';
             element.append(tag);
         },
