@@ -1203,6 +1203,8 @@
     <Content Include="Resources\img\gift1.jpg" />
     <Content Include="Resources\img\Gift_Card.png" />
     <Content Include="Resources\img\pscu.png" />
+    <Content Include="Scripts\AlertHandlingService\alertDirective.js" />
+    <Content Include="Scripts\AlertHandlingService\alertService.js" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\CheckBalance\checkBalanceDirective.js" />
     <Content Include="Scripts\CheckBalance\checkBalanceServices.js" />

@@ -10,11 +10,14 @@ var FISApp = angular.module('FISApp', [
   'checkBalanceDirective',
   'checkBalanceService',
   'depositCheckDirective',
+  'checkDepositControllers',
   'giftManagerDirective',
   'errorLogService',
   'stacktraceService',
   'loggingService',
-  'applicationLoggingService'
+  'applicationLoggingService',
+  'alertService',
+  'alertDirective'
 ]);
 
 FISApp.config(['$routeProvider',
@@ -37,34 +40,19 @@ FISApp.config(['$routeProvider',
     RestangularProvider.setRestangularFields({ clientId: '_id' });
 
 })
-.config(['$httpProvider', function($httpProvider) {
-    /**
-     * this interceptor uses the application logging service to
-     * log server-side any errors from $http requests
-     */
-    $httpProvider.responseInterceptors.push([
-        '$rootScope', '$q', '$injector', '$location', 'loggingService',
-        function ($rootScope, $q, $injector, $location, loggingService) {
-            return function(promise){
-                return promise.then(function(response){
-                    // http on success
-                    return response;
-                }, function (response) {
-                    if(response.status === null || response.status === 500) {
-                        var error = {
-                            method: response.config.method,
-                            url: response.config.url,
-                            message: response.data,
-                            status: response.status
-                                    };
-                        loggingService.error(JSON.stringify(error));
-                    }
-                    return $q.reject(response);
-                });
-            };
-        }
-    ]);
-}]);
+.config(function (RestangularProvider) {
+    RestangularProvider.setErrorInterceptor(['loggingService',
+      function (loggingService,response) {
+          var error = {
+              method: response.config.method,
+              url: response.config.url,
+              message: response.data,
+              status: response.status
+          };
+          loggingService.error(JSON.stringify(error));
+          return false; // stop the promise chain
+      }]);
+});
 FISApp.provider("$exceptionHandler",{$get: function (errorLogService) {
     return (errorLogService);}
 });

@@ -7,7 +7,7 @@ checkBalanceControllers.controller('checkBalanceControllers', ['$scope', '$http'
     $scope.showBalance = function () {
          return getUserDetails.userData.then(function (data) {
              $scope.userdetails = data;
-             applicationLoggingService.debug({
+             applicationLoggingService.info({
                  message: "retrieved data successfully",
              });
              return data;

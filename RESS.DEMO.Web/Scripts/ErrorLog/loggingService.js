@@ -20,7 +20,7 @@ loggingService.factory(
                     })
                 });
             },
-            debug: function (message) {
+            info: function (message) {
                 $log.log.apply($log, arguments);
                 $.ajax({
                     type: "POST",

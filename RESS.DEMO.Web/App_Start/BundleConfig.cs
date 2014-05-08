@@ -67,6 +67,10 @@ namespace RESS.DEMO.Web
                        "~/Scripts/ErrorLog/loggingService.js",
                        "~/Scripts/ErrorLog/applicationLoggingService.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/alertlog").Include(
+                       "~/Scripts/AlertHandlingService/alertService.js",
+                       "~/Scripts/AlertHandlingService/alertDirective.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/checkBalance").Include(
                         "~/Scripts/CheckBalance/checkBalanceDirective.js",
                         "~/Scripts/CheckBalance/checkBalanceController.js",
@@ -78,7 +82,9 @@ namespace RESS.DEMO.Web
                         "~/Scripts/Gift/giftManagerDirective.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/depositCheck").Include(
-                        "~/Scripts/DepositCheck/depositCheckDirective.js"));
+                        "~/Scripts/DepositCheck/depositCheckDirective.js",
+                        "~/Scripts/DepositCheck/depositCheckController.js",
+                        "~/Scripts/DepositCheck/depositCheckService.js"));
 
             //bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
