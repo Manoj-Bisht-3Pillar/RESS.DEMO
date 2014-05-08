@@ -168,6 +168,20 @@
     <Content Include="lib\angular-resource\angular-resource.min.js" />
     <Content Include="lib\angular-route\angular-route.js" />
     <Content Include="lib\angular-route\angular-route.min.js" />
+    <Content Include="lib\angular-ui-router\release\angular-ui-router.js" />
+    <Content Include="lib\angular-ui-router\release\angular-ui-router.min.js" />
+    <Content Include="lib\angular-ui-router\src\common.js" />
+    <Content Include="lib\angular-ui-router\src\compat.js" />
+    <Content Include="lib\angular-ui-router\src\resolve.js" />
+    <Content Include="lib\angular-ui-router\src\state.js" />
+    <Content Include="lib\angular-ui-router\src\stateDirectives.js" />
+    <Content Include="lib\angular-ui-router\src\stateFilters.js" />
+    <Content Include="lib\angular-ui-router\src\templateFactory.js" />
+    <Content Include="lib\angular-ui-router\src\urlMatcherFactory.js" />
+    <Content Include="lib\angular-ui-router\src\urlRouter.js" />
+    <Content Include="lib\angular-ui-router\src\view.js" />
+    <Content Include="lib\angular-ui-router\src\viewDirective.js" />
+    <Content Include="lib\angular-ui-router\src\viewScroll.js" />
     <Content Include="lib\angular\angular-csp.css" />
     <Content Include="lib\angular\angular.js" />
     <Content Include="lib\angular\angular.min.js" />
@@ -1471,6 +1485,13 @@
     <Content Include="lib\restangular\license.md" />
     <Content Include="lib\restangular\package.json" />
     <Content Include="lib\restangular\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\angular-ui-router\.bower.json" />
+    <Content Include="lib\angular-ui-router\bower.json" />
+    <Content Include="lib\angular-ui-router\CHANGELOG.md" />
+    <Content Include="lib\angular-ui-router\LICENSE" />
+    <Content Include="lib\angular-ui-router\README.md" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
