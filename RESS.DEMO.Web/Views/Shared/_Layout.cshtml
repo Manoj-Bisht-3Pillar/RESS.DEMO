@@ -11,14 +11,18 @@
     @Scripts.Render("~/bundles/jqueryui")
     @Scripts.Render("~/bundles/angular")
     @Scripts.Render("~/bundles/thirdParty")
-
+    @Scripts.Render("~/bundles/stacktrace")
+    @Scripts.Render("~/bundles/errorLog")
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     @Scripts.Render("~/bundles/app")
     @Scripts.Render("~/bundles/animations")
     @Scripts.Render("~/bundles/commonControllers")
-
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/checkBalance")
     @Scripts.Render("~/bundles/giftSend")
     @Scripts.Render("~/bundles/depositCheck")
+    @Scripts.Render("~/bundles/alertlog")
+
 </head>
 <body>
     <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -73,8 +77,6 @@
             @RenderSection("Footer", required: false)
         </div>
     </div>
-
-    <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../lib/restangular/dist/restangular.js"></script>
 </body>
 </html>

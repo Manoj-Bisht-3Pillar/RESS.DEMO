@@ -2,23 +2,22 @@
 @{
     Layout = null;
 }
-
-
-<div class="col-lg-4">
-    <div class="panel panel-default">
-        <div class="panel-heading">Deposit Check</div>
-        <div class="panel-body">
-            <form role="form">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Check Number</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Amount</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">Deposit Check</div>
+            <div class="panel-body">
+                <form role="form" ng-submit="validate_cheque(customer)">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Check Number</label>
+                        <input class="form-control" id="exampleInputEmail1" placeholder="Enter Cheque Number" ng-model="customer.ChequeNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Amount</label>
+                        <input class="form-control" id="exampleInputEmail1" placeholder="Enter Amount" ng-model="customer.ChequeAmount">
+                    </div>
+                    <input id="Button1" type="submit" value="Submit" class="btn btn-success" />
+                </form>
+            </div>
         </div>
+        <alert-directive></alert-directive>
     </div>
-</div>
